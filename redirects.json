@@ -1,0 +1,17 @@
+{
+	 "redirectRules":
+	 [
+		{
+			"type": "string",
+			"comment": "this rule is applied first",
+			"expression": "/thm-ra",
+			"location": "/thm-ra/"
+		},
+		{
+			"type": "wildcard",
+			"expression": "/items/*?page=*",
+			"location": "/<$page$>?item=<$wildcard(1)$>",
+			"code": 302
+		}
+	]
+} 
