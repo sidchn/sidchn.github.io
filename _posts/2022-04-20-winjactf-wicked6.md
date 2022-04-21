@@ -2,7 +2,7 @@
 layout: post
 author: Siddhant Chouhan
 title: Winja Wicked 6 Reverse Engineering Challenges Writeup
-date: 2020-10-03 12:20:00 +0530
+date: 2022-04-21 12:20:00 +0530
 categories: [ctf]
 tags: [ctf]
 image: /assets/img/Posts/winja-wicked6.png
