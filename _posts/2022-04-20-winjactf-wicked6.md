@@ -468,7 +468,7 @@ flag format is flag{s0me_text} <br>
 
 #### Solution
 
-While making the challenge I did the following things to prevent the solver simply using ghidra to read the code.
+While making the challenge I did the following things to prevent the solver from simply using ghidra to read the code.
 
 - The binary is compiled using gcc test.c -static -fvisibility=hidden -fvisibility-inlines-hidden -s -o a.out
 - The binary is stripped and the functions have been inlined so as to prevent reverse engineering to some extent.
