@@ -87,7 +87,7 @@ Dump of assembler code for function main:
    0x0000000000001297 <+146>:   mov    rdi,rax
    0x000000000000129a <+149>:   call   0x10f0 <strcat@plt>
 ```
-We see there is a call to getenv function, that's intersting the binary is looking for an environment variable. Let's set a break point at the main function and then run step by step in gdb.
+We see there is a call to getenv function, that's interesting the binary is looking for an environment variable. Let's set a break point at the main function and then run step by step in gdb.
 
 ```bash
 gdb-peda$ b * main                                                                                                                                              
