@@ -317,7 +317,6 @@ Let's use the "aa" command to analyze the binary and use "afl" to list all the f
 
 ```zsh
 
-    #in
             ; DATA XREF from entry0 @ 0x108d
 / 298: int main (int argc, char **argv, char **envp);
 |           ; var int64_t var_1ch @ rbp-0x1c
@@ -365,7 +364,7 @@ Let's use the "aa" command to analyze the binary and use "afl" to list all the f
 |      ||   0x000011fe      e83dfeffff     call sym.imp.printf         ; int printf(const char *format)
 |      ||   0x00001203      488d45e4       lea rax, qword [var_1ch]
 |      ||   0x00001207      4889c6         mov rsi, rax
-|      ||   0x0000120a      488d3d350e00.  lea rdi, qword [0x00002046] ; "%d"
+|      ||   0x0000120a      488d3d350e00   lea rdi, qword [0x00002046] ; "%d"
 |      ||   0x00001211      b800000000     mov eax, 0
 |      ||   0x00001216      e835feffff     call sym.imp.__isoc99_scanf ; int scanf(const char *format)
 |      ||   0x0000121b      8b45e4         mov eax, dword [var_1ch]
