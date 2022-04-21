@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Siddhant Chouhan
-title: Winja Wicked 6 Reverse Engineering Challenges Writeup
+title: Winja CTF Wicked 6 Reverse Engineering Challenges Writeup
 date: 2022-04-21 12:20:00 +0530
 categories: [ctf]
 tags: [ctf]
@@ -10,14 +10,13 @@ image: /assets/img/Posts/winja-wicked6.png
 
 ## Overview:
 
-As a community volunteer[@Winja](https://twitter.com/Winja_CTF) I created reverse engineering ctf challenges for [Wicked 6 Winja CTF for Women](https://www.wicked6.com/). Without wasting further time let's jump in!
+As a community volunteer [@Winja](https://twitter.com/Winja_CTF) I created reverse engineering ctf challenges for [Wicked 6 Winja CTF for Women](https://www.wicked6.com/). Without wasting further time let's jump in!
 
 ### d3bug-th1s
 
-Challenge Name: d3bug-th1s
-Category: Reverse Engineering
-Challenge Description: The space station provides a nice environment for enthusiasts to discover their potential. You are given a 
-linux executable which says "segmentation fault" on running can you find out what the binary is doing and get the flag.
+Challenge Name: d3bug-th1s <br>
+Category: Reverse Engineering <br>
+Challenge Description: The space station provides a nice environment for enthusiasts to discover their potential. You are given a linux executable which says "segmentation fault" on running can you find out what the binary is doing and get the flag. <br>
 
 #### Solution
 
@@ -213,9 +212,9 @@ We got the flag!!
 
 ### Unreachable
 
-Challenge: Unreachable
-Category: Reverse Engineering
-Description: Our engineers said that it was impossible to reach the flag printing function for this program, can you do the impossible? reach the unreachable?
+Challenge: Unreachable <br>
+Category: Reverse Engineering <br>
+Description: Our engineers said that it was impossible to reach the flag printing function for this program, can you do the impossible? reach the unreachable? <br>
 
 #### Solution
 
@@ -288,10 +287,10 @@ gdb-peda$
 
 ### easy-rev
 
-Challenge Name : Easy-Rev
-Category : Reverse Engineering
-Description: you are given a 64 bit linux executable named easy-rev.out execute it on your linux systems using ./easy-rev.out. It asks for 3 passwords if you give the correct passwords the flag will be printed.
-Flag format: flag{some_thing_here}
+Challenge Name : Easy-Rev <br>
+Category : Reverse Engineering <br>
+Description: you are given a 64 bit linux executable named easy-rev.out execute it on your linux systems using ./easy-rev.out. It asks for 3 passwords if you give the correct passwords the flag will be printed. <br>
+Flag format: flag{some_thing_here} <br>
 
 #### Solution
 
@@ -462,10 +461,10 @@ flag{radare_15_1337}%                                                           
 
 ### packed-locker
 
-Challenge Name: packed-locker
-Category: Reverse Engineering
-Description: You are given a 64 bit linux executable with some defense mechanisms which will make reverse engineering difficult,find the password!.
-flag format is flag{s0me_text}
+Challenge Name: packed-locker <br>
+Category: Reverse Engineering <br>
+Description: You are given a 64 bit linux executable with some defense mechanisms which will make reverse engineering difficult,find the password!. <br>
+flag format is flag{s0me_text} <br>
 
 #### Solution
 
@@ -476,7 +475,7 @@ While making the challenge I did the following things to prevent the solver simp
 - The binary is then packed using upx 9 a.out
 
 
-Let's run the file command to get some information about the elf file.
+Let's run the file command to get some information about the elf file. 
 
 ```zsh
 ➜  packed-locker git:(main) file packed-locker.out 
@@ -484,7 +483,7 @@ packed-locker.out: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statical
 ➜  packed-locker git:(main) 
 ```
 
-So the given binary is a 64 bit elf executable, it is statically linked and has no section header.
+So the given binary is a 64 bit elf executable, it is statically linked and has no section header. 
 
 > The section header table has all of the information necessary to locate and isolate each of the file's sections. A section header entry in a section header table contains information characterizing the contents of the corresponding section, if the file has such a section.
 
