@@ -89,6 +89,7 @@ Dump of assembler code for function main:
    0x000000000000129a <+149>:   call   0x10f0 <strcat@plt>
 ```
 We see there is a call to getenv function, that's intersting the binary is looking for an environment variable. Let's set a break point at the main function and then run step by step in gdb.
+
 ```bash
 gdb-peda$ b * main                                                                                                                                              
 Breakpoint 1 at 0x1205                                                                                                                                          
@@ -548,7 +549,8 @@ packed-locker.out: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statical
 ```
 
 Alright now let's analyze it using radare2, using aa to analyze the program and afl to list all the functions.
-```
+
+```zsh
 ➜  packed-locker git:(main) ✗ r2 packed-locker.out
 [0x00401b90]> aa
 [x] Analyze all flags starting with sym. and entry0 (aa)
