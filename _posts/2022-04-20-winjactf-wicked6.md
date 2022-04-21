@@ -373,7 +373,7 @@ Let's use the "aa" command to analyze the binary and use "afl" to list all the f
 |     |||   0x00001228      8b55e8         mov edx, dword [var_18h]
 |     |||   0x0000122b      488d45f6       lea rax, qword [var_ah]
 |     |||   0x0000122f      4889c6         mov rsi, rax
-|     |||   0x00001232      488d3d2d0e00.  lea rdi, qword str.flag__s__d__d ; 0x2066 ; "flag{%s_%d_%d}"
+|     |||   0x00001232      488d3d2d0e00.  lea rdi, qword str.flag__s__d__d ; 0x2066 ; "flag{\%s_%d_%d}"
 |     |||   0x00001239      b800000000     mov eax, 0
 |     |||   0x0000123e      e8fdfdffff     call sym.imp.printf         ; int printf(const char *format)
 |    ,====< 0x00001243      eb37           jmp 0x127c
@@ -447,7 +447,7 @@ Similarly for the third part, we can see our input is being compared against 0x5
 |     |||   0x00001228      8b55e8         mov edx, dword [var_18h]
 |     |||   0x0000122b      488d45f6       lea rax, qword [var_ah]
 |     |||   0x0000122f      4889c6         mov rsi, rax
-|     |||   0x00001232      488d3d2d0e00.  lea rdi, qword str.flag__s__d__d ; 0x2066 ; "flag{%s_%d_%d}"
+|     |||   0x00001232      488d3d2d0e00.  lea rdi, qword str.flag__s__d__d ; 0x2066 ; "flag{\%s_%d_%d}"
 ```
 
 Let's put all the pieces together
@@ -607,7 +607,7 @@ Great we we can see the main function, let's take a look at the disassembly of t
 |       ,=< 0x00401d43      751a           jne 0x401d5f
 |       |   0x00401d45      488d45e0       lea rax, qword [var_20h]
 |       |   0x00401d49      4889c6         mov rsi, rax
-|       |   0x00401d4c      488d3dcdc209.  lea rdi, qword str.Congrats__the_flag_is_flag__s ; 0x49e020 ; "Congrats, the flag is flag{%s}"
+|       |   0x00401d4c      488d3dcdc209.  lea rdi, qword str.Congrats__the_flag_is_flag__s ; 0x49e020 ; "Congrats, the flag is flag{\%s}"
 |       |   0x00401d53      b800000000     mov eax, 0
 |       |   0x00401d58      e8936f0000     call 0x408cf0
 |      ,==< 0x00401d5d      eb0c           jmp 0x401d6b
