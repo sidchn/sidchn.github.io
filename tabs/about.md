@@ -12,24 +12,25 @@ title: $ whoami
 
 <!-- The unordered list immediately after the h1 will be formatted on a single
 line. It is intended to be used for contact details -->
-- [https://www.linkedin.com/in/siddhant-chouhan/](https://www.linkedin.com/in/siddhant-chouhan/)
+- [linkedin.com/in/siddhant-chouhan](https://www.linkedin.com/in/siddhant-chouhan/)
 - <sidchn@gmail.com>
-- New Delhi, India
+- [Twitter: @siddhantc_](https://twitter.com/siddhantc_)
+- New Delhi/Bangalore, India
 
 <!-- The paragraph after the h1 and ul and before the first h2 is optional. It
 is intended to be used for a short summary. -->
-A Cyber Security Enthusiast with knowledge of network and web application penetration testing, currently exploring linux and windows x86 exploit development, and application security. 
+Cyber Security engineer with hands-on knowledge of APIs, Containers, AWS, Web and Network Security. Passionate about building secure products and culture. Keen interest in threat modelling, secure code review and open source security. Ask me anything related to cyber security!
 
 ## Experience
 
 <!-- You have to wrap the "left" and "right" half of these headings in spans by
 hand -->
 
-### <span>Member of Technical Staff (MTS), VMware</span> <span>(January 2022 - Present)</span>
- Role involves the following activities:
- - Threat modelling
- - Secure Code Review
- - Penetration Testing
+### <span>Product Security Engineer - Member of Technical Staff (MTS), VMware</span> <span>(January 2022 - Present)</span>
+
+• Threat Modeling/Design Reviews/Attack Surface Analysis, Secure Code Review and Penetration Testing of VMware products and cloud services. 
+• Identify and recommend cloud security best practices for Kubernetes, Docker, AWS etc.
+• Review SAST/DAST findings and recommend solutions
 
 ### <span>Cyber Security Intern (VAPT), Syfe</span> <span>(September 2021 -- November 2021)</span>
 
