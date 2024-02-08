@@ -10,7 +10,7 @@
 
 title: Siddhant                          # the main title
 
-tagline: Cyber Security Researcher | OSCP # it will display as the sub-title
+tagline: Cyber Security Engineer # it will display as the sub-title
           
 description: >-                        # used by seo meta and the atom feed
   Welcome to my Info-Sec Blog
@@ -33,7 +33,7 @@ social:
   email: sidchn@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/sidchn_20      # change to your twitter homepage
+    - https://twitter.com/siddhantc_      # change to your twitter homepage
     - https://github.com/sidchn       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
